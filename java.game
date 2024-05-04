@@ -19,3 +19,30 @@ public class TextAdventureGame {
                 System.out.println("Пожалуйста, выберите правильный вариант.");
             }
         }
+
+        System.out.println("Спасибо за игру!");
+    }
+
+    public static void introduction() {
+        System.out.println("Добро пожаловать в текстовую игру!");
+        System.out.println("Вы просыпаетесь в темной комнате. Перед вами две двери.");
+    }
+
+    public static int makeChoice(Scanner scanner) {
+        System.out.println("Выберите действие:");
+        System.out.println("1. Войти в левую дверь.");
+        System.out.println("2. Войти в правую дверь.");
+
+        return scanner.nextInt();
+    }
+
+    public static void leftDoor() {
+        System.out.println("Вы вошли в левую дверь и оказались в саду с яркими цветами.");
+        System.out.println("Вы наслаждаетесь природой.");
+    }
+
+    public static void rightDoor() {
+        System.out.println("Вы вошли в правую дверь и попали в темное подземелье.");
+        System.out.println("Вы слышите странные звуки вокруг себя.");
+    }
+}
